@@ -1,0 +1,262 @@
+/* Configuration de la page */
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+body {
+    margin: 0 auto;
+    background: url(../images/bg.jpg) fixed;
+    background-size: cover;
+    font-family: 'Abril FatFace', cursive;
+}
+
+/* configuration de l'en-tête */
+
+header {
+    height: 600px;
+    padding: 25px;
+}
+
+nav {
+    display: flex;
+    width: 60%;
+    margin-left: 40%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: space-around;
+    gap: 100px;
+}
+
+nav a {
+    color: #fff;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    background-color: #ADD98150;
+    padding: 10px 20px;
+    border: 4px solid #fff;
+    border-radius: 10px;
+    flex: 1;
+    text-align: center;
+}
+
+nav a:hover {
+    color: #ADD981;
+    border: 4px solid #ADD981;
+    background-color: #fff;
+    transform: translateY(-6px);
+}
+
+/* page de bienvenue (landing-page) */
+.landing-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.landing-page img {
+    width: 20%;
+    background-color: #ADD98150;
+    border-radius: 120px;
+    padding: 100px 50px;
+}
+
+.big-title {
+    color: white;
+    font-size: 80px;
+    font-weight: 100;
+    width: 50%;
+}
+
+/* Services */
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    background-color: #fff;
+    border-bottom: 12px solid #ADD981;
+    border-top: 12px solid #ADD981;
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: #ADD981;
+}
+
+.service-details {
+    font-weight: 600;
+    width: 300px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.section-title {
+    font-size: 50px;
+    font-weight: 100;
+    background: linear-gradient(360deg, rgb(173, 217, 129)  0%, rgba(255,255,255,0) 30%, rgba(255,255,255,0) 70% ,  rgb(173, 217, 129) 100%);
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* best items */
+
+.bests-items {
+    margin: 100px;
+}
+
+.best-plants {
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.plant-box {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px 0px rgba(255,255,255,0.7),
+    1px 2px 4px 0px rgba(255,255,255,0.7),
+    2px 4px 8px 0px rgba(255,255,255,0.7),
+    2px 4px 16px 0px rgba(255,255,255,0.7);
+    overflow:hidden;
+    border: 3px solid #000;
+}
+
+.no-grid {
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+}
+
+.plant1 {
+    background-image: url(../images/nos_meilleures_ventes/1.jpg);
+}
+
+.plant2 {
+    background-image: url(../images/nos_meilleures_ventes/2.jpg);
+}
+
+.plant3 {
+    background-image: url(../images/nos_meilleures_ventes/3.jpg);
+}
+
+.plant4 {
+    background-image: url(../images/nos_meilleures_ventes/4.jpg);
+}
+
+.plant-details {
+    position: absolute;
+    width: 100%;
+    height:80px;
+    bottom: -101px;
+    padding: 5px 20px 10px 20px;
+    border: 3px solid #fff;
+}
+
+.plant-box>span {
+    position: absolute;
+    left: calc(50% - 18px);
+    bottom: 18px;
+    background-color: #ADD981;
+    padding: 9px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    font-size: 12px;
+    color: white;
+}
+
+.plant-box:hover .plant-details {
+    bottom: 0;
+    padding-top: 0;
+    background-color: #FFFFFFDF;
+}
+
+.plant-name {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 3px;
+}
+
+.plant-price {
+    color: #ADD981;
+    line-height: 3px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+/* Nos plantes */
+.all-plants {
+    margin: 100px;
+}
+
+.plant-grid {
+    display: grid;
+    min-height: 150vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 400px);
+    gap: 20px;
+}
+
+.plant-grid1 {
+    background-image: url(../images/nos_plantes/1.jpg);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.plant-grid2 {
+    background-image: url(../images/nos_plantes/2.jpg);
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+
+.plant-grid3 {
+    background-image: url(../images/nos_plantes/3.jpg);
+    grid-column: 4/5;
+    grid-row: 1/3;
+}
+
+.plant-grid4 {
+    background-image: url(../images/nos_plantes/4.jpg);
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+.plant-grid5 {
+    background-image: url(../images/nos_plantes/5.jpg);
+    grid-column: 3/4;
+    grid-row: 3/5;
+}
+
+.plant-grid6 {
+    background-image: url(../images/nos_plantes/6.jpg);
+    grid-column: 4;
+    grid-row: 3/5;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-weight: 600;
+    background-color: #ADD98150;
+    color: white;
+    font-size: 20px;
+}
+
+footer a.cgv {
+    text-decoration: none;
+    color: white;
+}
