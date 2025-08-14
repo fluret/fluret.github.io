@@ -1,0 +1,65 @@
+#galery .content{
+    height: 60vh;
+    width: 80%;
+    margin: 5vh auto;
+}
+
+.gallery {
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+    gap: 5px;
+}
+
+.card {
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 2s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
+    flex: 1;
+    border: 4px solid #664f14;
+}
+
+.card[for="c1"]{
+    background-image: url(../pics/g1.jpg);
+}
+
+.card[for="c2"] {
+    background-image: url(../pics/g2.jpg);
+}
+
+.card[for="c3"] {
+    background-image: url(../pics/g3.jpg);
+}
+
+.card[for="c4"] {
+    background-image: url(../pics/g4.jpg);
+}
+
+.card[for="c5"] {
+    background-image: url(../pics/g5.jpg);
+}
+
+.card[for="c6"] {
+    background-image: url(../pics/g6.jpg);
+}
+
+.card[for="c7"] {
+    background-image: url(../pics/g7.jpg);
+}
+
+.card[for="c8"] {
+    background-image: url(../pics/g8.jpg);
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    flex: 20;
+}
