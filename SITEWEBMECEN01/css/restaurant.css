@@ -23,12 +23,12 @@
 
 #restaurant .content #recette2 {
     grid-area: recette2;
-    background-image: url("../pics/Italian-food.jpg");
+    background-image: url("../pics/mexican-food.jpg");
 }
 
 #restaurant .content #recette3 {
     grid-area: recette3;
-    background-image: url("../pics/mexican-food.jpg");
+    background-image: url("../pics/italian-food.jpg");
 }
 
 #restaurant .content #recette4 {
