@@ -24,10 +24,10 @@ header nav ul li a:hover {
     color: var(--primary-color);
 }
 
-.btn-1 {
+.navbtn {
     transition: all 0.3s ease;
 }
-.btn-1:hover {
+.navbtn:hover {
     box-shadow:
     -7px -7px 20px 0px #fff9,
     -4px -4px 5px 0px #fff9,

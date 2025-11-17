@@ -15,6 +15,7 @@
 #about #explis {
     position: relative;
     width: 50%;
+    height: 80%;
     align-self: center;
 }
 
@@ -24,16 +25,6 @@
     position: absolute;
 }
 
-#about #explis span {
-    line-height: 2rem;
-    text-align: justify;
-    font-size: 2vh;
-    letter-spacing: 0.2rem;
-    padding: 2%;
-    height: 50vh;
-    display: block;
-}
-
 .images img:nth-child(1) { 
     top: 0; 
     left: 0; 
@@ -54,63 +45,60 @@
     left: 55%; 
 }
 
-#about .content img {
-    width: 40%;
-    height: 50%;
+/* On cache tous les span */
+#about #explis span {
+    line-height: 2rem;
+    text-align: justify;
+    font-size: 2vh;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    height: 100%;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s ease, visibility 2s;
     position: absolute;
-    transition: var(--transition-smooth);
-    filter: blur(2px);
-    opacity: 0.7;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Images positioning optimized */
+/* Afficher le premier span par défaut*/
+#about #explis span:nth-child(1) {
+    visibility: visible;
+    text-align: center;
+    opacity: 1;
+}
+
 .images img:nth-child(1) { 
     top: 0; 
-    left: 0; 
+    left: 0;
     z-index: 1;
 }
 
 .images img:nth-child(2) { 
     bottom: 5%; 
-    left: 10%; 
+    left: 10%;
     z-index: 2;
 }
 
 .images img:nth-child(3) { 
     bottom: 30%; 
-    left: 35%; 
+    left: 35%;
     z-index: 4;
 }
 
 .images img:nth-child(4) { 
     top: 5%; 
-    left: 55%; 
+    left: 55%;
     z-index: 3;
-}
-
-/* Masquer tous les spans par défaut */
-#about #explis span {
-    line-height: 2rem;
-    text-align: justify;
-    font-size: 2vh;
-    letter-spacing: 0.2rem;
-    padding: 2%;
-    height: 50vh;
-    display: none;
-    overflow-y: auto;
-}
-
-/* Afficher le premier span par défaut */
-#about #explis span:nth-child(1) {
-    display: block;
-    text-align: center;
-    opacity: 1;
 }
 
 /* Solution ultra-générique : quand une image est survolée, masquer tous les spans */
 #about .content:has(.images img:hover) #explis span {
-    display: none;
     opacity: 0;
+    visibility: hidden;
 }
 
 /* Puis afficher uniquement le span correspondant à l'index de l'image survolée */
@@ -118,8 +106,8 @@
 #about .content:has(.images img:nth-child(2):hover) #explis span:nth-child(3),
 #about .content:has(.images img:nth-child(3):hover) #explis span:nth-child(4),
 #about .content:has(.images img:nth-child(4):hover) #explis span:nth-child(5) {
-    display: block;
     opacity: 1;
+    visibility: visible;
 }
 
 /* Hover générique pour toutes les images */
@@ -128,6 +116,7 @@
     filter: brightness(1.1) saturate(1.2) blur(0px) !important;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     opacity: 1 !important;
+    transition: all 1s ease;
 }
 
 /* Quand on survole une image, toutes les autres deviennent floues */

@@ -10,28 +10,25 @@
     --font-main: 'Roboto Slab', serif;
 }
 
-body, html {
+html, body{
     margin: 0;
     padding: 0;
     height: 100vh;
+    width: 100vw;
     overflow: hidden;
     font-family: var(--font-main);
 }
 
-header , #about, #amenities, #rooms, #restaurant, #gallery {
+header, #about, #amenities, #rooms, #restaurant, #gallery {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    gap: 0px;
+    display: grid; 
+    grid-template-rows: 1fr 4fr;
+    gap: 0; 
     grid-template-areas: 
-        "headerall headerall headerall"
-        "content content content"
-        "content content content"
-        "content content content"
-        "content content content";
+        "headerall"
+        "content"; 
 }
 
 .content {
@@ -44,9 +41,35 @@ header , #about, #amenities, #rooms, #restaurant, #gallery {
         background-image: url("../pics/back03.jpg");
         background-repeat: no-repeat;
         background-size:cover;
+        border-bottom: 6px solid var(--primary-color);
+        border-style: none none groove none;
     }
 }
 
 header .headerall {
     grid-area: headerall;
+}
+
+.bordure {
+    border: var(--border-main);
+    border-radius: 12px;
+}
+
+.bordure2 {
+    border-radius: 25px;
+    border: var(--border-thick);
+}
+
+.ombre{
+    box-shadow: var(--shadow-main);
+}
+
+.ombre2 {
+    box-shadow: var(--shadow-soft);
+}
+
+.confpic {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }

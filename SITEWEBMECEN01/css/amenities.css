@@ -1,18 +1,7 @@
-.activities {
-    font-size: large;
-    font-weight: bolder;
-    padding: 0.5rem;
-}#amenities > .content {
-    background-image: url(../pics/back08.jpg);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
-    align-items: center;
-    justify-items: center;
-}
-
 #amenities > .content {
     background-image: url("../pics/back08.jpg");
+    background-size: cover;
+    background-position: center;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
@@ -21,7 +10,7 @@
     gap: 2rem;
 }
 
-#activities-list {
+.content #activities-list {
     width: 90%;
     background: rgba(63, 156, 193, 0.6);
     padding: 0.5%;
@@ -39,12 +28,24 @@
     width: 50%;
 }
 
+.activities {
+    font-size: large;
+    font-weight: bolder;
+    padding: 0.5rem;
+}
+
 #amenities #activities-list:hover {
     cursor: pointer;
 }
 
 #amenities .content i {
     margin: 5px 20px 0 10px;
+}
+
+#expli1 {
+    padding: 1rem;;
+    height: 100%;
+    background-image: url("../pics/piscine01.jpg");
 }
 
 #explications div span {
@@ -63,6 +64,7 @@
     position: absolute;
     bottom: -110%;
     height: 100%;
+    width: 100%;
     transition: bottom 0.8s ease-in-out;
 }
 
@@ -85,11 +87,11 @@
 }
 
 /* Images de fond pour chaque explication */
-#explications div:nth-child(1) { background-image: url("../pics/piscine01.jpg"); }
-#explications div:nth-child(2) { background-image: url("../pics/yoga01.jpg"); }
-#explications div:nth-child(3) { background-image: url("../pics/spa01.jpg"); }
-#explications div:nth-child(4) { background-image: url("../pics/bateau02.jpg"); }
-#explications div:nth-child(5) { background-image: url("../pics/surf01.jpg"); }
-#explications div:nth-child(6) { background-image: url("../pics/conference01.jpg"); }
+#explications div:nth-child(1) { background-image: url("../pics/piscine01.jpg");}
+#explications div:nth-child(2) { background-image: url("../pics/yoga01.jpg");}
+#explications div:nth-child(3) { background-image: url("../pics/spa01.jpg");}
+#explications div:nth-child(4) { background-image: url("../pics/bateau02.jpg");}
+#explications div:nth-child(5) { background-image: url("../pics/surf01.jpg");}
+#explications div:nth-child(6) { background-image: url("../pics/conference01.jpg");}
 #explications div:nth-child(7) { background-image: url("../pics/diving01.jpg"); }
 #explications div:nth-child(8) { background-image: url("../pics/beach01.jpg"); }

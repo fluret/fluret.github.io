@@ -13,53 +13,57 @@
 
 #restaurant .content #salle {
     grid-area: salle;
-    background-image: url("../pics/re.jpg");
+    background-image: url("/pics/re.jpg");
 }
 
 #restaurant .content #recette1 {
     grid-area: recette1;
-    background-image: url("../pics/french-food.jpg");
+    background-image: url("/pics/french-food.jpg");
 }
 
 #restaurant .content #recette2 {
     grid-area: recette2;
-    background-image: url("../pics/mexican-food.jpg");
+    background-image: url("/pics/mexican-food.jpg");
 }
 
 #restaurant .content #recette3 {
     grid-area: recette3;
-    background-image: url("../pics/italian-food.jpg");
+    background-image: url("/pics/italian-food.jpg");
 }
 
 #restaurant .content #recette4 {
     grid-area: recette4;
-    background-image: url("../pics/deutch-food.jpg");
+    background-image: url("/pics/deutch-food.jpg");
 }
 
 #restaurant .content div h2 {
-    position: absolute;
-    top: 102%;
-    transition: all 0.5s ease-in-out;
     font-size: 4vh;
     font-weight: 400;
     color: white;
     text-align: center;
-    background-color: var(--primary-color);
     padding: 1vh 0;
-    width: 100%;
+    width: 90%;
+    border-radius: 15px;
+    backdrop-filter: blur(30px);
+    box-shadow: Opx Opx 30px rgba(227. 228, 237. 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
+    position: absolute;
+    top: 102%;
+    transition: all 0.5s ease-in-out;
 }
 
 #restaurant .content div p {
+    font-size: 1.1rem;
+    color: white;
+    text-align: justify;
+    padding: 1vh;
+    border-radius: 15px;
+    backdrop-filter: blur(30px);
+    box-shadow: Opx Opx 30px rgba(227. 228, 237. 0.37);
+    border: 2px solid rgba(255, 255, 255, 0.18);
     position: absolute;
     transition: all 0.5s ease-in-out;
     bottom: 102%;
-    font-size: 1.5vh;
-    margin: 2rem;
-    color: white;
-    text-align: justify;
-    background-color: var(--primary-color);
-    padding: 1vh;
-    border-radius: 15px;
 }
 
 #restaurant .content div {
