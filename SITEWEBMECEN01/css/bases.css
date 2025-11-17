@@ -38,7 +38,7 @@ header, #about, #amenities, #rooms, #restaurant, #gallery {
 #about, #amenities, #rooms, #restaurant, #gallery {
     .headerall {
         grid-area: headerall;
-        background-image: url("../pics/back03.jpg");
+        background-image: url("./pics/back03.jpg");
         background-repeat: no-repeat;
         background-size:cover;
         border-bottom: 6px solid var(--primary-color);
